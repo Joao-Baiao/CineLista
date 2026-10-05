@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listagem, pesquisa, filtro e ordenação de filmes do CineLista.">
+  <title>CineLista | Meus filmes</title>
+</head>
+<body>
+  <header>
+    <h1>CineLista</h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cadastro.html">Cadastrar filme</a></li>
+        <li><a href="filmes.html">Meus filmes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="consulta-titulo">
+      <h2 id="consulta-titulo">Consultar filmes</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="pesquisa">Pesquisar pelo título</label><br>
+          <input type="search" id="pesquisa" name="pesquisa" placeholder="Digite um título">
+          <button type="submit">Pesquisar</button>
+        </p>
+        <p>
+          <label for="filtro-status">Filtrar por status</label><br>
+          <select id="filtro-status" name="status">
+            <option value="">Todos</option>
+            <option>Quero assistir</option>
+            <option>Assistindo</option>
+            <option>Assistido</option>
+          </select>
+        </p>
+        <p>
+          <label for="ordenacao">Ordenar por</label><br>
+          <select id="ordenacao" name="ordenacao">
+            <option>Título (A-Z)</option>
+            <option>Título (Z-A)</option>
+            <option>Ano mais recente</option>
+            <option>Maior nota</option>
+          </select>
+        </p>
+      </form>
+    </section>
+
+    <section aria-labelledby="lista-titulo">
+      <h2 id="lista-titulo">Filmes cadastrados</h2>
+      <table>
+        <caption>Lista de filmes cadastrados no CineLista</caption>
+        <thead>
+          <tr><th scope="col">Título</th><th scope="col">Gênero</th><th scope="col">Ano</th><th scope="col">Status</th><th scope="col">Nota</th><th scope="col">Ações</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Interestelar</td><td>Ficção científica</td><td>2014</td><td>Assistido</td><td>9,5</td><td><a href="detalhes.html">Ver detalhes</a> <button type="button">Editar</button> <button type="button">Excluir</button></td></tr>
+          <tr><td>O Show de Truman</td><td>Drama</td><td>1998</td><td>Quero assistir</td><td>Não avaliado</td><td><a href="detalhes.html">Ver detalhes</a> <button type="button">Editar</button> <button type="button">Excluir</button></td></tr>
+          <tr><td>De Volta para o Futuro</td><td>Ficção científica</td><td>1985</td><td>Quero assistir</td><td>Não avaliado</td><td><a href="detalhes.html">Ver detalhes</a> <button type="button">Editar</button> <button type="button">Excluir</button></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer><p>CineLista - Trabalho Prático Individual Evolutivo</p></footer>
+</body>
+</html>
