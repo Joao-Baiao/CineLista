@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema pessoal para organizar filmes assistidos e filmes que o usuário pretende assistir.">
+  <title>CineLista | Início</title>
+</head>
+<body>
+  <header>
+    <h1>CineLista</h1>
+    <p>Organize os filmes que você assistiu ou pretende assistir.</p>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pages/cadastro.html">Cadastrar filme</a></li>
+        <li><a href="pages/filmes.html">Meus filmes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="resumo-titulo">
+      <h2 id="resumo-titulo">Resumo da coleção</h2>
+      <ul>
+        <li><strong>3</strong> filmes cadastrados</li>
+        <li><strong>1</strong> filme assistido</li>
+        <li><strong>2</strong> filmes para assistir</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="destaques-titulo">
+      <h2 id="destaques-titulo">Filmes em destaque</h2>
+
+      <article>
+        <h3>Interestelar</h3>
+        <p><strong>Gênero:</strong> Ficção científica</p>
+        <p><strong>Ano:</strong> 2014</p>
+        <p><strong>Status:</strong> Assistido</p>
+        <a href="pages/detalhes.html">Ver detalhes</a>
+      </article>
+
+      <article>
+        <h3>O Show de Truman</h3>
+        <p><strong>Gênero:</strong> Drama</p>
+        <p><strong>Ano:</strong> 1998</p>
+        <p><strong>Status:</strong> Quero assistir</p>
+        <a href="pages/detalhes.html">Ver detalhes</a>
+      </article>
+    </section>
+
+    <aside aria-labelledby="api-titulo">
+      <h2 id="api-titulo">Pesquisa externa</h2>
+      <p>Em uma etapa futura, a API pública TVmaze poderá ser usada para pesquisar filmes e preencher dados do cadastro.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>CineLista - Trabalho Prático Individual Evolutivo</p>
+  </footer>
+</body>
+</html>
