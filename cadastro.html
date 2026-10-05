@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro de filmes no sistema CineLista.">
+  <title>CineLista | Cadastrar filme</title>
+</head>
+<body>
+  <header>
+    <h1>CineLista</h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cadastro.html">Cadastrar filme</a></li>
+        <li><a href="filmes.html">Meus filmes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="cadastro-titulo">
+      <h2 id="cadastro-titulo">Cadastrar filme</h2>
+      <p>Preencha as informações do filme. Nesta etapa, o formulário é apenas visual.</p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="titulo">Título</label><br>
+          <input type="text" id="titulo" name="titulo" required maxlength="100" placeholder="Ex.: Interestelar">
+        </p>
+
+        <p>
+          <label for="genero">Gênero</label><br>
+          <select id="genero" name="genero" required>
+            <option value="">Selecione</option>
+            <option>Ação</option>
+            <option>Comédia</option>
+            <option>Drama</option>
+            <option>Ficção científica</option>
+            <option>Suspense</option>
+            <option>Outro</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="ano">Ano de lançamento</label><br>
+          <input type="number" id="ano" name="ano" min="1888" max="2100" required placeholder="Ex.: 2014">
+        </p>
+
+        <p>
+          <label for="status">Status</label><br>
+          <select id="status" name="status" required>
+            <option value="">Selecione</option>
+            <option>Quero assistir</option>
+            <option>Assistindo</option>
+            <option>Assistido</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="nota">Nota pessoal (0 a 10)</label><br>
+          <input type="number" id="nota" name="nota" min="0" max="10" step="0.5" placeholder="Ex.: 9">
+        </p>
+
+        <p>
+          <label for="descricao">Comentário</label><br>
+          <textarea id="descricao" name="descricao" rows="5" maxlength="500" placeholder="Escreva uma observação sobre o filme"></textarea>
+        </p>
+
+        <button type="submit">Cadastrar filme</button>
+        <button type="reset">Limpar formulário</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>CineLista - Trabalho Prático Individual Evolutivo</p></footer>
+</body>
+</html>
